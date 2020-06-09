@@ -1,5 +1,14 @@
-@mixin title ($fz, $fw, $color) {
-   font-size: $fz;
+$templateWidth: 1170;
+
+@mixin responsive-font ($maxSize, $minSize, $fw, $color) {
+   $addSize: $maxSize - $minSize;
+   $addMobSize: $addSize + $addSize * 0.7;
+   @media (max-width: 767px) {
+      font-size: calc(#{$minSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$templateWidth}));
+   }
+   @media (min-width: 767px) {
+      font-size: calc(#{$minSize + px} + #{$addSize} * (100vw / #{$templateWidth}));
+   }
    font-weight: $fw;
    color: $color;
 }
