@@ -2,7 +2,6 @@
 @import "_mixins.scss";
 @import "_slick.scss";
 @import "_slick-theme.scss";
-@import "_responsive.scss";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -550,3 +549,4 @@ input:focus:-ms-input-placeholder {
     text-align: center;
   }
 }
+@import "_responsive.scss";

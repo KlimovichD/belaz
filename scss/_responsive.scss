@@ -1,4 +1,10 @@
 @media (max-width: 1199px) {
+.belaz__description{
+   padding: 60px;
+}
+.questions__list-item::after{
+   display: none;
+}
 
 }
 
@@ -14,7 +20,7 @@
 }
 
 @media (max-width: 320px) {
-   
+
 }
 
 

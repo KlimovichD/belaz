@@ -1086,4 +1086,13 @@ input:focus:-ms-input-placeholder {
 .footer__phone-block {
   text-align: center;
 }
+
+@media (max-width: 1199px) {
+  .belaz__description {
+    padding: 60px;
+  }
+  .questions__list-item::after {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
